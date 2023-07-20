@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#e55c58">
+    <title>Ashutosh's Profile</title>
+    <link rel="shortcut icon" href="Images/profile_img.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+
+        .side-menu-anime-in {
+            animation: comein 300ms 1;
+        }
+
+        @keyframes comein {
+            from {
+                left: 100vh;
+                top: 0vh;
+            }
+
+            to {
+                left: 0vh;
+                top: 0vh;
+            }
+        }
+
+        .side-menu-anime-out {
+            animation: comeout 300ms 1;
+        }
+
+        @keyframes comeout {
+
+            from {
+                left: 0vh;
+                top: 0vh;
+            }
+
+            to {
+                left: 100vh;
+                top: 0vh;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body class="relative">
+
+    <div id="side-menu"
+        class="h-[50vh] bg-gray-100 w-full text-2xl fixed left-0 top-0 z-10 shadow-lg hidden select-none">
+
+        <div class="flex justify-end">
+            <div id="side-menu-cross">
+                <img src="./cross.svg" alt="" class="h-12 w-12">
+            </div>
+        </div>
+        <!-- Home Projects Contact Me CV(download)  -->
+        <div class="text-pink-700 p-10">
+            <ul>
+                <li class="marker:content-['➤'] marker:text-yellow-500">
+                    <a href="#" class="cursor-not-allowed text-black"> Home 👈</a>
+                </li>
+                <li class="marker:content-['➤'] marker:text-yellow-500">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="marker:content-['➤'] marker:text-yellow-500">
+                    <a href="#contact">Contact Me</a>
+                </li>
+                <li class="marker:content-['➤'] marker:text-yellow-500">
+                    <a href="AshutoshRanjan_CSE_SOA.pdf" download>CV <span class="text-yellow-500">(download)</span> </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    
+
+    <section id="website" class="min-h-full relative select-none">
+
+        <nav class="h-[40vh] bg-gradient-to-tr to-yellow-400 from-pink-600  flex flex-row justify-center items-center p-4 w-full border-b-4 relative md:flex-col md:justify-between lg:h-[55vh]">
+
+            <div class="inline-block bg-white opacity-80 border-black rounded-full border-4 absolute left-4 top-4 p-1 md:hidden" id="menu">
+                <a href="#" class="flex flex-row items-center active:select-none">
+                    <img src="./justify.svg" alt="" class="h-[40px] w-[40px]  ">
+                    <span class="text-2xl text-black font-bold font-mono">Menu</span>
+                </a>
+            </div>
+
+            <!-- Home Projects Contact Me CV(download)  -->
+            <!-- navigation menu when display is above md resolution -->
+    
+            <div class="hidden md:flex sticky top:0 p-2">
+
+                <ul class="flex items-center justify-around w-[50vw]">
+                    <li class="text-lg text-black md:hover:scale-110"><a href="#">Home</a></li>
+                    <li class="text-white text-lg md:hover:scale-110"><a href="#projects">Projects</a></li>
+                    <li class="text-white text-lg md:hover:scale-110"><a href="#contact">Contact Me</a></li>
+                    <li class="text-white text-lg md:hover:scale-110"><a href="Ashutosh Ranjan_CSE_SOA.pdf" download>CV(download)</a></li>
+                </ul>
+
+            </div>
+
+            <div id="brand-name" class="text-5xl flex flex-col justify-center items-center text-white">
+                <img class="w-[10rem] h-[10rem] rounded-full inline-block border-2 white" src="./Images/profile_img.png" alt="">
+                <p class="text-center">Ashutosh Ranjan</p>
+            </div>
+
+
+        </nav>
+
+        <div id="hero" class="my-12 h-[50vh] flex flex-col justify-around items-center lg:h-[30vh]">
+
+            <p class="px-10 text-center text-5xl">
+                Hello👋, there.
+                <br>
+                <br>
+                <span class="text-3xl">Welcome to my portfolio Website.</span>
+            </p>
+
+            <a class="text-yellow-400 text-6xl animate-bounce select-none" href="#skills">
+                <img class="w-10 h-10 md:w-7 md:h-7" src="Images/arrow_down.svg" alt="">
+            </a>
+
+        </div>
+
+        
+        <div  id="skills">
+            <div class="skills my-12">
+
+                <div class="my-12">
+                    <h3
+                        class=" bg-gradient-to-tr to-yellow-400 from-pink-600 font-bold text-center border-t-4 border-b-4 border-yellow-500 text-4xl font-mono py-12 text-white">
+                        Skills</h3>
+                </div>
+
+                <div class="flex flex-wrap justify-center">
+
+                    <div class="p-4 flex flex-row justify-center items-center">
+                        <div class="flex flex-col w-3/4">
+                            <img class="rounded-md  border-t-8 border-l-8 border-pink-600 w-[70vh]" src="Images/typing.webp"
+                                alt="">
+                            <p class="proj-desc text-center text-xl">
+                                Average <b>Typing speed</b> of <b>70wpm</b>. <br>
+                                Highest👑 <b>85wpm</b>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 flex flex-row justify-center items-center">
+                        <div class="flex flex-col w-3/4">
+                            <img class="rounded-md   border-t-8 border-l-8 border-pink-600 w-[70vh]"
+                                src="Images/dsa.webp" alt="data structure and algorithm">
+                            <p class="proj-desc text-center text-xl">
+                                I love to solve <b>data structure and algorithm</b> problems.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 flex flex-row justify-center items-center">
+                        <div class="flex flex-col w-3/4">
+                            <img class="rounded-md  border-t-8 border-l-8 border-pink-600 w-[70vh]" src="Images/frontend.webp"
+                                alt="">
+                            <p class="proj-desc text-center text-xl">
+                                I am <b>Front-End Developer</b>.
+                                <br>
+                                Know <b>ReactJS</b>, <b>Redux</b>, <b>Tailwind</b>, <b>JS</b>, <b>Css</b>, <b>Html</b>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 flex flex-row justify-center items-center">
+                        <div class="flex flex-col w-3/4">
+                            <img class="rounded-md  border-t-8 border-l-8 border-pink-600 w-[70vh]" src="Images/frontend.webp"
+                                alt="">
+                            <p class="proj-desc text-center text-xl">
+                                Know aws services
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div  id="projects">
+            <div class="projects">
+
+                <div class="my-12">
+                    <h3 class="bg-gradient-to-tr to-yellow-400 from-pink-600 font-bold text-center border-t-4 border-b-4 border-yellow-500 text-3xl font-mono text-white py-12">
+                        Projects
+                    </h3>
+                </div>
+
+                <div class="flex flex-wrap justify-center">
+
+                    <div class="p-4 flex flex-row justify-center items-center">
+                        <div class="flex flex-col w-3/4">
+                            <img class="rounded-md  border-t-8 border-l-8 border-pink-600"
+                                src="https://cdn.pixabay.com/photo/2022/08/09/10/33/flowers-7374683__340.jpg" alt="">
+                            <p class="proj-desc text-center text-xl">
+                                Hello Chat App
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div  id="contact">
+            
+            <div class="w-full">
+
+                <div class="my-12">
+                    <h3 class="bg-gradient-to-tr to-yellow-400 from-pink-600 font-bold text-center border-t-4 border-b-4 border-yellow-500 text-3xl font-mono text-white py-12">
+                        Contact Me
+                    </h3>
+                </div>
+
+                <div class="p-2">
+                    <form action="" class="flex flex-col items-center">
+                        <label for="contact-name" class="text-2xl">
+                            <span class="">Name</span>
+                            <input type="text" value="" id="contact-name" class="block border-2 p-1 placeholder-red-300 text-xl" placeholder="First Middle Last">
+                        </label>
+                        
+                        <label for="contact-number" class="text-2xl">
+                            <span>Contact No.</span>
+                            <input type="tel" maxlength="15" value="" class="block border-2 p-1 placeholder-red-300 text-xl" placeholder="+91 9283..">
+                        </label>
+                        
+                        <label for="" class="text-2xl">
+                            <span>Email</span>
+                            <input type="email" value="" class="block border-2 p-1 placeholder-red-300 text-xl" placeholder="abc@gmail.com">
+                        </label>
+                        <label for="" class="text-2xl">
+                            <span>Message</span>
+                            <textarea name="" id="" cols="24" rows="7" class="border-2 p-1 block placeholder-red-300 outline-none focus:outline-gray-600 text-xl" placeholder="write something to me"></textarea>
+                        </label>
+                        <a href="mailto:ranjan.ashutosh2003@gmail.com" class="block text-2xl bg-red-400 text-white p-2 rounded-full my-2">Send</a>
+
+                        </a>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+        <hr>
+
+        <footer class="bg-gradient-to-tr to-yellow-400 from-pink-600 p-2">
+            <p class="text-center text-2xl text-white font-bold font-mono" id="copyright">©<span></span></p>
+            <div class="flex flex-row justify-center items-center">
+                <p class="flex flex-row p-4">
+                    <div class="rounded-full m-2"><a href="https://twitter.com/Ashutos50039872"><img class="w-8 h-8" src="Images/twitter.png" alt=""></a></div>
+                    <div class="rounded-full m-2"><a href="https://www.linkedin.com/in/ashutosh-ranjan-90b6971ba/"><img class="w-8 h-8" src="Images/linkedin.png" alt=""></a></div>
+                    <div class="rounded-full m-2"><a href="https://github.com/creatorGod003"><img class="w-8 h-8" src="Images/github.png" alt=""></a></div>
+                </p>
+            </div>
+        </footer>
+
+    </section>
+    <script src="sidebar.js"></script>
+</body>
+
+</html>
