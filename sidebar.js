@@ -1,6 +1,13 @@
 document.getElementById("menu").addEventListener('click', func1);
 document.getElementById("side-menu-cross").addEventListener('click', func1);
 
+document.getElementsByClassName("sidebar-link")[0].addEventListener('click', func1);
+document.getElementsByClassName("sidebar-link")[1].addEventListener('click', func1);
+document.getElementsByClassName("sidebar-link")[2].addEventListener('click', func1);
+document.getElementsByClassName("sidebar-link")[3].addEventListener('click', func1);
+
+
+
 var count = 1;
 
 function func1() {

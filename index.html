@@ -62,16 +62,16 @@
         <div class="text-pink-700 p-10">
             <ul>
                 <li class="marker:content-['➤'] marker:text-yellow-500">
-                    <a href="#" class="cursor-not-allowed text-black"> Home 👈</a>
+                    <a href="#" class="sidebar-link"> About Me 👈 </a>
                 </li>
                 <li class="marker:content-['➤'] marker:text-yellow-500">
-                    <a href="#projects">Projects</a>
+                    <a href="#projects" class="sidebar-link">Projects</a>
                 </li>
                 <li class="marker:content-['➤'] marker:text-yellow-500">
-                    <a href="#contact">Contact Me</a>
+                    <a href="#contact" class="sidebar-link">Contact Me</a>
                 </li>
                 <li class="marker:content-['➤'] marker:text-yellow-500">
-                    <a href="resume.pdf" download>CV <span class="text-yellow-500">(download)</span> </a>
+                    <a href="resume.pdf" class="sidebar-link" download>CV <span class="text-yellow-500">(download)</span> </a>
                 </li>
             </ul>
         </div>
@@ -84,11 +84,11 @@
 
         <nav class="h-[40vh] bg-gradient-to-tr to-yellow-400 from-pink-600  flex flex-row justify-center items-center p-4 w-full border-b-4 relative md:flex-col md:justify-between lg:h-[55vh]">
 
-            <div class="inline-block bg-white opacity-80 border-black rounded-full border-4 absolute left-4 top-4 p-1 md:hidden" id="menu">
-                <a href="#" class="flex flex-row items-center active:select-none">
+            <div class="inline-block bg-white opacity-80 border-black rounded-full border-4 fixed left-4 top-4 p-1 md:hidden" id="menu">
+                <button class="flex flex-row items-center active:select-none">
                     <img src="./justify.svg" alt="" class="h-[40px] w-[40px]  ">
                     <span class="text-2xl text-black font-bold font-mono">Menu</span>
-                </a>
+                </button>
             </div>
 
             <!-- Home Projects Contact Me CV(download)  -->
@@ -116,7 +116,7 @@
         <div id="hero" class="my-12 h-[50vh] flex flex-col justify-around items-center lg:h-[30vh]">
 
             <p class="px-10 text-center text-5xl">
-                Namaste 🙏
+                Namaste! 🙏
                 <br>
                 <br>
                 <span class="text-3xl">Welcome to my portfolio Website.</span>
@@ -144,8 +144,8 @@
                         <div class="flex flex-col w-3/4 relative shadow-md shadow-black group">
                             <img class="rounded-md rounded-br-none rounded-bl-none w-[70vh]" src="Images/typing.webp"
                                 alt="">
-                            <div class="absolute bottom-0 bg-black bg-opacity-50 w-full px-2 h-[3rem] group-hover:h-[7rem] transition-all ease-in-out">
-                                <h3 class="text-white text-xl font-bold my-2">Fast Typing speed</h3>
+                            <div class="absolute bottom-0 bg-black bg-opacity-50 w-full px-2 h-[5rem] group-hover:h-[7rem] transition-all ease-in-out">
+                                <h3 class="text-white text-xl font-bold my-2">Touch Typer</h3>
                                 <p class="proj-desc text-white opacity-0 group-hover:opacity-100">
                                     Average <b>Typing speed</b> of <b>70wpm</b>. <br>
                                     Highest👑 <b>85wpm</b>
@@ -157,8 +157,8 @@
                     <div class="p-4 flex flex-row justify-center items-center">
                         <div class="flex flex-col w-3/4 relative shadow-md shadow-black group">
                             <img class="rounded-md rounded-br-none rounded-bl-none w-[70vh]" src="Images/dsa.webp" alt="data structure and algorithm">
-                            <div class="absolute bottom-0 bg-black bg-opacity-50 w-full px-2 h-[3rem] group-hover:h-[7rem] transition-all ease-in-out">
-                                <h3 class="text-white text-xl font-bold my-2">Data Structure and Algorithm</h3>
+                            <div class="absolute bottom-0 bg-black bg-opacity-50 w-full px-2 h-[5rem] group-hover:h-[7rem] transition-all ease-in-out">
+                                <h3 class="text-white text-xl font-bold my-2">Data Structure & Algorithm</h3>
                                 <p class="proj-desc text-white opacity-0 group-hover:opacity-100">
                                     Sound knowledge of <b class="text-yellow-500">data structure and algorithm</b> concepts.
                                 </p>
@@ -170,8 +170,8 @@
                         <div class="flex flex-col w-3/4 relative shadow-md shadow-black group">
                             <img class="rounded-md rounded-br-none rounded-bl-none w-[70vh]" src="Images/frontend.webp"
                             alt="">
-                            <div class="absolute bottom-0 bg-black bg-opacity-50 w-full px-2 h-[3rem] group-hover:h-[7rem] transition-all ease-in-out">
-                                <h3 class="text-white text-xl font-bold my-2">Frontend Web Development</h3>
+                            <div class="absolute bottom-0 bg-black bg-opacity-50 w-full px-2 h-[5rem] group-hover:h-[7rem] transition-all ease-in-out">
+                                <h3 class="text-white text-xl font-bold my-2">Frontend Web <br> Development</h3>
                                 <p class="proj-desc text-white opacity-0 group-hover:opacity-100">
                                     Sound knowledge of <span class="text-white"><b>HTML, CSS, JS</b> and <b>ReactJS</b></span>.
                                 </p>
